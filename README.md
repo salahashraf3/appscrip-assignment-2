@@ -1,4 +1,4 @@
-# Appscrip Assignment 1 - React App
+# Appscrip Assignment 2 - React App
 
 ## Overview
 
@@ -6,7 +6,7 @@ This React application is developed for Appscrip as part of Assignment 2. It pro
 
 ## Live Project Link
 
-[Appscrip Assignment 1 - Live Project](https://appscrip-assignment-1-mocha.vercel.app/)
+[Appscrip Assignment 2 - Live Project](https://appscrip-assignment-2-beta.vercel.app/)
 
 ## Tech Stack
 
