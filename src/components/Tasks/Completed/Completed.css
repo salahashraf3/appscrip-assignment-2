@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+.cards_container{
+    margin-top: 1%;
+    padding: 0.5%;
+}
+
+.card{
+    margin-top: 1%;
+    border: 1px solid rgba(233, 236, 241, 1);
+    border-radius: 12px;
+    width: 100%;
+    padding: 0.7%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.profile_pic img{
+    object-fit: contain;
+    width: 80%;
+}
+
+.name_group{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.group1 h1{
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.group1 p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.group2_link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(55, 123, 255, 0.9);
+}
+
+.task_date_group{
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+    color: rgba(126, 126, 126, 1);
+}
+
+.task_status_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.start_btn{
+    padding: 5% 18%;
+    margin-top: 4%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgba(4, 9, 90, 1);
+}
+
+@media (max-width: 1200px) {
+   .card{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   }
+   .start_btn{
+    padding: 2% 5%;
+   }
+   .name_group{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+   }
+}

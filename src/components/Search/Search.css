@@ -1,0 +1,108 @@
+.search_container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 1fr;
+}
+.search_items_left{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+}
+.search_items_right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.calender_container{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.search_btn_group{
+    display: flex;
+    gap: 2%;
+}
+
+.search_btn{
+    padding: 0.5% 8% 0.5% 0.7%;
+    border: 1px solid rgba(126, 126, 126, 1);
+    border-radius: 12px;
+    background-color: initial;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    cursor: pointer;
+}
+.search_btn input{
+    background-color: initial;
+    border: none;
+}
+.calender_btn{
+    padding: 1.7% 1%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(126, 126, 126, 1);
+    background-color: initial;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.calender_btn input{
+    padding-left: 0.3%;
+    width: 100%;
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_apply{
+    padding: 3% 7.5%;
+    border: none;
+    border-radius: 150px;
+    background-color: rgba(4, 9, 90, 1);
+    color: white;
+    cursor: pointer;
+}
+.btn_reset{
+    border: 1px solid rgba(55, 123, 255, 1);
+    background-color: initial;
+    color: rgba(55, 123, 255, 1);
+}
+.filter_btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4% 9.5%;
+    border-radius: 25px;
+    border: 1px solid rgba(4, 9, 90, 1);
+    background-color: initial;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+   .search_container{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+   }
+   .search_items_left{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-content: center;
+   }
+   .calender_container{
+    display: flex;
+    justify-content: center;
+   }
+   .search_btn_group{
+    display: flex;
+    justify-content: center;
+   }
+   .search_items_right{
+    display: flex;
+    justify-content: center;
+   }
+   .filter_btn{
+    padding: 2% 3%;
+   }
+}

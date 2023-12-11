@@ -1,0 +1,47 @@
+.medlife_logo{
+    padding: 1% 2%;
+}
+
+.appoiment_btns{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn_appointment{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    padding: 4%;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 13px;
+    color: white;
+    background-color: rgba(4, 9, 90, 1);
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.btn_dropdown{
+    margin: 0% 5%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    align-content: start;
+    color: rgba(126, 126, 126, 1);
+    border: none;
+    background-color: initial;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.btn_dropdown p{
+    text-align: start;
+}
+
+.btn_dropdown_selected{
+    background-color: rgba(248, 251, 255, 1);
+    border-right: 3px solid rgba(4, 9, 90, 1);
+}
