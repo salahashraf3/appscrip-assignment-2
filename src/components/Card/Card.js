@@ -5,7 +5,7 @@ const Card = ({
   name,
   id,
   assessment,
-  tasId,
+  taskId,
   date,
   duration,
   status,
@@ -26,7 +26,7 @@ const Card = ({
           }}
         >
           <div className="group1">
-            <h1>{name}</h1>
+            <h6>{name}</h6>
             <p style={{ color: "rgba(126, 126, 126, 1)" }}>
               Appointment Id : {id}
             </p>
@@ -37,24 +37,16 @@ const Card = ({
         </div>
       </div>
       <div className="task_date_group">
-        <p>
-          Task Id:{" "}
-          <span style={{ color: "black", fontWeight: "900", fontSize: "17px" }}>
-            {tasId}
-          </span>
-        </p>
-        <p>
-          Date & time:{" "}
-          <span style={{ color: "black", fontWeight: "900", fontSize: "17px" }}>
-            {date}
-          </span>{" "}
-        </p>
-        <p>
-          Duration:{" "}
-          <span style={{ color: "black", fontWeight: "900", fontSize: "17px" }}>
-            {duration}
-          </span>
-        </p>
+        <div className="task_date_left">
+          <p>Task Id: </p>
+          <p>Date & time: </p>
+          <p>Duration: </p>
+        </div>
+        <div className="task_date_right">
+          <p>{taskId}</p>
+          <p>{date}</p>
+          <p>{duration}</p>
+        </div>
       </div>
       <div className="task_status_group">
         {status !== "" && (
@@ -63,8 +55,8 @@ const Card = ({
             <span
               style={
                 status === "Upcoming"
-                  ? { color: "green", fontWeight: "900", fontSize: "16px" }
-                  : { color: "red", fontWeight: "900", fontSize: "16px" }
+                  ? { color: "green", fontWeight: "600", fontSize: "16px" }
+                  : { color: "red", fontWeight: "600", fontSize: "16px" }
               }
             >
               {status}
